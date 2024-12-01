@@ -16,7 +16,7 @@ elseif Config.Framework == 'esx' then
 end
 
 Config.Dependency = {                   
-    UseTarget = 'ox',                   -- qb | oxaaaaa
+    UseTarget = 'ox',                   -- qb | ox
     UseInventory = 'ox',                -- qb | ox | esx             
     UseProgress = 'ox',                 -- qb | ox | esx                  
     UseMenu = 'ox',                     -- qb | ox | esx 
