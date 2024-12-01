@@ -16,12 +16,12 @@ elseif Config.Framework == 'esx' then
 end
 
 Config.Dependency = {                   
-    UseTarget = 'qb',                   -- qb | ox
-    UseInventory = 'qb',                -- qb | ox | esx             
-    UseProgress = 'qb',                 -- qb | ox | esx                  
-    UseMenu = 'qb',                     -- qb | ox | esx 
-    UseNotify = 'qb',                   -- qb | ox | esx
-    UseAppearance = 'qb',               -- qb | illenium | false 
+    UseTarget = 'ox',                   -- qb | ox
+    UseInventory = 'ox',                -- qb | ox | esx             
+    UseProgress = 'ox',                 -- qb | ox | esx                  
+    UseMenu = 'ox',                     -- qb | ox | esx 
+    UseNotify = 'ox',                   -- qb | ox | esx
+    UseAppearance = 'illenium',               -- qb | illenium | false 
 }
 
 Config.ExitCamKey = 'BACK' 
@@ -47,7 +47,7 @@ Config.PropLoc = {  -- Change prop position according to ur clothing pack.
     },
 }
 
-Config.AllowedJobs = { -- Only these jobs can use bodycam/dashcam item.
+Config.AllowedJobs = { -- Only these jobs can use bodycam/dashcam item. 
     'police',
     'ambulance',
 }
@@ -58,7 +58,7 @@ Config.WatchLoc = {
     [1] = {
         coords = vector3(440.149445, -979.437378, 30.453491), 
         rad = 0.3, 
-        debug= false,
+        debug= true,
         jobCam = {'police','ambulance'},  -- jobs mentioned here are shown in the list | false = able to view all the bodycams
         carCam = {                        -- false = able to view all the dashcams
             job = {'police'},             -- Jobs that activate dashcams shown in the list | false excludes.
