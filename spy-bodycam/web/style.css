@@ -18,12 +18,18 @@
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
-    margin-right: 2rem;
-    background: rgba(0, 0, 0, 0.486);
-    box-shadow: -2px 0px 46px -9px rgba(0, 0, 0, 0.644) inset, 0px 4px 8px rgba(0, 0, 0, 0.418);
+    margin-right: 3rem;
     padding: 1rem;
     border-radius: 10px;
-    color: white;
+    color: white; /* Cor do texto principal */
+    font-size: 20px;
+
+    /* Criando um traçado usando sombras */
+    text-shadow: 
+        -1px -1px 0px black, /* Sombra superior esquerda */
+        1px -1px 0px black,  /* Sombra superior direita */
+        -1px 1px 0px black,  /* Sombra inferior esquerda */
+        1px 1px 0px black;   /* Sombra inferior direita */
 }
 
 .RecordInfo{
@@ -48,10 +54,13 @@
     flex-direction: column;
     align-items: flex-end;
 }
-.overlayBody img{
-    width: 66px;
-    height: auto;
+.overlayBody img {
+    width: 80px; /* Aumentei a largura */
+    padding-left: 5px;
+    height: auto; /* Mantém a proporção */
 }
+
+
 .bodyNum , .bodyCallsign {
     font-family: "Play", sans-serif;
 }
